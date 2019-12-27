@@ -1,168 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="main.css" type="text/css" rel="stylesheet" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-  <title>SVG SHAPES</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>SVG SHAPES|aprilharris.co</title><!-- CUSTOM CSS -->
+	<link href="css/main.css" rel="stylesheet" type="text/css"><!-- FONT AWESOME -->
+
+	<script src="https://kit.fontawesome.com/267ed9a0a2.js">
+	</script>
 </head>
-
 <body>
-<header>
-     <nav>
-       <ul>
-         <a href="https://github.com/aprilharris/svg-shapes" target="_blank" rel="noopener noreferrer">GITHUB</a>
-       </ul>
-     </nav>
-  </header>
-  <header class="container">
-    <h1 align="center">Four Shapes You Can Build With SVG</h1>
-  </header>
-  <main class="container">
-  <p class="subheading">You can easily create geometric shapes using SVG.</p>
-<div class="container">
-<section class="content">
-<p><b>"Scalable Vector Graphics</b>," otherwise known as "SVG" is a great web tool when you need a lightweight option to create crisp digital assets that you can animate. One of the best features of SVG is that it's scalable, meaning, that it looks great on just about any screen, regardless of a device's resolution.</p>
-
-<p>Besides adding a polished look to your website, SVG supports accessibility and SEO. How? SVG files are text based which allows them to be searched and indexed by sites like Google, Bing, and Yahoo in addition to working with screen readers.</p>
-
-<p> Browser support for SVG was slow, and so, it's no surprise developers have largely underused it as a design option. Still, as SVG browser support has <a href="https://caniuse.com/#feat=svg">expanded</a>, more designers seem to be using SVG to create digital assets like logos, animations, user interface elements, and icons.</p>
-
-<p>This article covers some simple shapes you can build with SVG.</p>
-</section>
-</div>
-
-<section class="section">
-<div class="container">
-<!--==CIRCLE==-->
-      <h1 class="title">1. Circles</h1>
-<div class="columns">
-    <div class="column">
-     <section class="circle">
-        <figure>
-        <svg width="100%" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="30%" cy="40%" r="100" stroke="transparent" fill="#a37410" stroke-width="0" />
-        </svg>
-        <figcaption>A simple circle coded with SVG.</figcaption>
-        </figure>
+	<header>
+    <nav class="left">
+      <a href="index.html">home</a>
+      <a href="#">about</a>
+    </nav>
+		<nav class="right">
+        <a href="https://github.com/aprilharris/svg-shapes" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.w3schools.com/graphics/svg_examples.asp" target="_blank" rel="noopener noreferrer">resources</a>
+		</nav>
+	</header>
+	<main class="container">
+		<!-- WHAT IS SVG? -->
+		<section>
+        <h1>Summary</h1>
+        <ul>
+          <li>SVG (scalable vector graphic) is graphic media format</i></li>
+          <li>You can enlarge or shrink SVG assets without compromising resolution</li>
+          <li>Vector graphics are digital images generated via mathematical formulas</li>
+          <li>SVG assets aid accessibility and SEO</li>
+        </ul>
         </section>
-        </div>
-<div class="column">
-<dl>
-<b>You need three attributes to code a circle with SVG:</b>
- <dt><code>r</code>&emsp;The <u>radius</u> of the circle.</dt>
- <dt><code>cx</code>&emsp;The <u>x</u> position of the center of the circle.</dt>
- <dt><code>cy</code>&emsp;The <u>y</u> position of the center of the circle.</dt>
-</dl>
-</div>
-</figure>
+  
+<section>
+      <h2>Vector vs. Raster</h2>
+      <p>There are The two general categories are raster (PNG, JPEG) and vector (SVG). Raster images include files that end in .png, .jpg, and .jpeg. Files that end in .svg are vector images.</p>
 
-  </section>
-<!--==LINE==-->
-<section class="section">
-<div class="container">
-<div class="columns">
-     <div class="column">
-      <h1 class="title">2. Lines</h1>
-<figure>
-<svg width="100%" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
-<line x1="100" y1="10" x2="500" y2="250" stroke="#233237" stroke-width="15" />
-    </svg>
-              <figcaption><small>Make sure you specify the stroke's fill, otherwise your line won't be visible.</small></figcaption>
-</figure>
-  </div>
-  <div class="column">
-  <dl>
-            <dt><code><a href="/en-US/docs/Web/SVG/Attribute/x1">x1</a></code></dt>
-            <dd>Defines the x-axis coordinate of the line starting point.<br>
-            <small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-            <dt><code><a href="/en-US/docs/Web/SVG/Attribute/x2">x2</a></code></dt>
-            <dd>Defines the x-axis coordinate of the line ending point.<br>
-            <small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-            <dt><code><a href="/en-US/docs/Web/SVG/Attribute/y1">y1</a></code></dt>
-            <dd>Defines the y-axis coordinate of the line starting point.<br>
-            <small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-            <dt><code><a href="/en-US/docs/Web/SVG/Attribute/y2">y2</a></code></dt>
-            <dd>Defines the y-axis coordinate of the line ending point.<br>
-            <small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-            <dt><code><a href="/en-US/docs/Web/SVG/Attribute/pathLength">pathLength</a></code></dt>
-            <dd>Defines&nbsp;the total path length&nbsp;in user units.<br>
-            <small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <em>none</em>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-            </dl>
-              </div>
-  </section>
+<p>Raster graphics have a tendency to pixelate if enlarged beyond their resolution capabilities. In contrast, vector media can shrink or enlarge withouth compromising resolution.</p>
+      </section>
 
-<!--==RECTANGLE==-->
-<section class="section">
-<div class="container">
-<div class="columns">
-<div class="column">
-      <h1 class="title">3. Rectangles</h1>
-      <figure>
-          <svg width="100%" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <rect x="10%" y="40%" width="300" height="100" stroke="transparent" fill="#76323f" stroke-width="5" />
-          </svg>
-          </figure>
-</div> 
-  <div class="column">
-    <dl>
-                <dt><code>x</code></dt>
-                <dd>The x coordinate of the rect.<br>
-                <small><em>Value type</em>: <strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-                <dt><code><a href="/en-US/docs/Web/SVG/Attribute/y">y</a></code></dt>
-                <dd>The y coordinate of the rect.<br>
-                <small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-                <dt><code><a href="/en-US/docs/Web/SVG/Attribute/width">width</a></code></dt>
-                <dd>The width of the rect.<br>
-                <small><em>Value type</em>: <code>auto</code>|<a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>auto</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-                <dt><code><a href="/en-US/docs/Web/SVG/Attribute/height">height</a></code></dt>
-                <dd>The height of the rect.<br>
-                <small><em>Value type</em>: <code>auto</code>|<a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>auto</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-                <dt><code><a href="/en-US/docs/Web/SVG/Attribute/rx">rx</a></code></dt>
-                <dd>The horizontal corner radius of the rect. Defaults to <code>ry</code> if it is specified.<br>
-                <small><em>Value type</em>: <code>auto</code>|<a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>auto</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-                <dt><code><a href="/en-US/docs/Web/SVG/Attribute/ry">ry</a></code></dt>
-                <dd>The vertical corner radius of the rect. Defaults to <code>rx</code> if it is specified.<br>
-                <small><em>Value type</em>: <code>auto</code>|<a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>auto</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-                <dt><code><a href="/en-US/docs/Web/SVG/Attribute/pathLength">pathLength</a></code></dt>
-                <dd>The total length of the rectangle's perimeter,&nbsp;in user units.<br>
-                <small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <em>none</em>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-                </dl>
-</div>
-</div>
-  </section>
-<!--==STAR==-->
-  <section class="section">
-  <div class="container">
-  <div class="columns">
-  <div class="column">
-<h1 class="title">4. A 5-Point Star</h1>
-    <svg width="100%" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-      <polygon points="100,10 40,198 190,78 10,78 160,198" stroke="transparent" fill="#6f3731" stroke-width="3" />
-    </svg>
-    <figcaption><small>A key advantage of SVG is crispness at any size.</small></figcaption>
-    </figure>
-  </div>
-  <div class="column">
-  <p>
-The polygon element defines a closed shape consisting of a set of connected straight line segments. The last point is connected to the first point. </p>
-<dl>
- <dt><code><a href="/en-US/docs/Web/SVG/Attribute/points">points</a></code></dt>
- <dd>This attribute defines the list of points (pairs of x,y absolute coordinates) required to draw the polygon.<br>
- <small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a>+ ; <em>Default value</em>: <code>""</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
- <dt><code><a href="/en-US/docs/Web/SVG/Attribute/pathLength">pathLength</a></code></dt>
- <dd>This attribute lets specify the total length for the path,&nbsp;in user units.<br>
- <small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <em>none</em>; <em>Animatable</em>: <strong>yes</strong></small></dd>
-</dl>
-    </div>
-    </div>
+<section>
+<p>SVG hasn't quite hit "widespread adoption", more designers are discovering its benefits and integrating it into their web projects.</p>
+<p>Originally, browser support for SVG was limited.</p>
+<p>Perhaps this is why we haven't seen its widespread adoption</p>
+<p>As browser support continues to <a href="https://caniuse.com/#feat=svg">expand</a>, we can expect to see more designers seem to be using SVG to create digital assets like logos, animations, user interface elements, and icons.</p>
 </section>
-</main>
-<footer>
 
-</footer></body>
+    <section>
+		<h1>Accessibility & SEO</h1>
+		<p>Besides adding a polished look to your website, SVG supports accessibility and SEO. How? 
+      SVG files are text based which allows them to be searched and indexed by sites like Google, Bing, and Yahoo in addition to working with screen readers.</p>
+    </section>
 
+
+<article>
+<h1>Tutorial: Make Some Shapes With SVG</h1>
+		<p>This article covers some simple shapes you can build with SVG.</p>
+		<section class="section">
+			<div class="container">
+				<!--==CIRCLE==-->
+				<h1 class="title">1. Circles</h1>
+						<section class="circle">
+							<figure>
+								<svg height="250" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="30%" cy="40%" fill="#a37410" r="100" stroke="transparent" stroke-width="0"></circle></svg>
+								<figcaption>
+									A simple circle coded with SVG.
+								</figcaption>
+							</figure>
+						</section>
+					</div>
+						<dl>
+							<dd><b>You need three attributes to code a circle with SVG:</b></dd>
+							<dt><code>r</code>&emsp;The <u>radius</u> of the circle.</dt>
+							<dt><code>cx</code>&emsp;The <u>x</u> position of the center of the circle.</dt>
+							<dt><code>cy</code>&emsp;The <u>y</u> position of the center of the circle.</dt>
+						</dl>
+					</div>
+				</div>
+			</div>
+    </section>
+    
+
+  			<section class="container">
+				<div class="columns">
+					<div class="column">
+						<h1 class="title">2. Lines</h1>
+						<figure>
+							<svg height="300" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg">
+							<line stroke="#233237" stroke-width="15" x1="100" x2="500" y1="10" y2="250"></line></svg>
+							<figcaption>
+								<small>Make sure you specify the stroke's fill, otherwise your line won't be visible.</small>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="column">
+						<dl>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/x1">x1</a></code></dt>
+							<dd>Defines the x-axis coordinate of the line starting point.<br>
+							<small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/x2">x2</a></code></dt>
+							<dd>Defines the x-axis coordinate of the line ending point.<br>
+							<small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/y1">y1</a></code></dt>
+							<dd>Defines the y-axis coordinate of the line starting point.<br>
+							<small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/y2">y2</a></code></dt>
+							<dd>Defines the y-axis coordinate of the line ending point.<br>
+							<small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/pathLength">pathLength</a></code></dt>
+							<dd>Defines&nbsp;the total path length&nbsp;in user units.<br>
+							<small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <em>none</em>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+						</dl>
+					</div>
+				</div>
+			</section>
+		</><!--==RECTANGLE==-->
+		<section class="section">
+			<div class="container">
+				<div class="columns">
+					<div class="column">
+						<h1 class="title">3. Rectangles</h1>
+						<figure>
+							<svg height="300" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg">
+							<rect fill="#76323f" height="100" stroke="transparent" stroke-width="5" width="300" x="10%" y="40%"></rect></svg>
+						</figure>
+					</div>
+					<div class="column">
+						<dl>
+							<dt><code>x</code></dt>
+							<dd>The x coordinate of the rect.<br>
+							<small><em>Value type</em>: <strong>&lt;length&gt;</strong>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/y">y</a></code></dt>
+							<dd>The y coordinate of the rect.<br>
+							<small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>0</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/width">width</a></code></dt>
+							<dd>The width of the rect.<br>
+							<small><em>Value type</em>: <code>auto</code>|<a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>auto</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/height">height</a></code></dt>
+							<dd>The height of the rect.<br>
+							<small><em>Value type</em>: <code>auto</code>|<a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>auto</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/rx">rx</a></code></dt>
+							<dd>The horizontal corner radius of the rect. Defaults to <code>ry</code> if it is specified.<br>
+							<small><em>Value type</em>: <code>auto</code>|<a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>auto</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/ry">ry</a></code></dt>
+							<dd>The vertical corner radius of the rect. Defaults to <code>rx</code> if it is specified.<br>
+							<small><em>Value type</em>: <code>auto</code>|<a href="/docs/Web/SVG/Content_type#Length"><strong>&lt;length&gt;</strong></a>|<a href="/docs/Web/SVG/Content_type#Percentage"><strong>&lt;percentage&gt;</strong></a> ; <em>Default value</em>: <code>auto</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/pathLength">pathLength</a></code></dt>
+							<dd>The total length of the rectangle's perimeter,&nbsp;in user units.<br>
+							<small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <em>none</em>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</section><!--==STAR==-->
+		<section>
+			
+						<h1 class="title">4. A 5-Point Star</h1><svg height="200" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg">
+						<polygon fill="#6f3731" points="100,10 40,198 190,78 10,78 160,198" stroke="transparent" stroke-width="3"></polygon></svg>
+						<figcaption>
+							<small>A key advantage of SVG is crispness at any size.</small>
+						</figcaption>
+					</div>
+					<div class="column">
+						<p>The polygon element defines a closed shape consisting of a set of connected straight line segments. The last point is connected to the first point.</p>
+						<dl>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/points">points</a></code></dt>
+							<dd>This attribute defines the list of points (pairs of x,y absolute coordinates) required to draw the polygon.<br>
+							<small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a>+ ; <em>Default value</em>: <code>""</code>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+							<dt><code><a href="/en-US/docs/Web/SVG/Attribute/pathLength">pathLength</a></code></dt>
+							<dd>This attribute lets specify the total length for the path,&nbsp;in user units.<br>
+							<small><em>Value type</em>: <a href="/docs/Web/SVG/Content_type#Number"><strong>&lt;number&gt;</strong></a> ; <em>Default value</em>: <em>none</em>; <em>Animatable</em>: <strong>yes</strong></small></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</section>
+  </article>
+  </main>
+	<footer>
+		<h6 align="center">FOOTER</h6>
+	</footer>
+</body>
 </html>
